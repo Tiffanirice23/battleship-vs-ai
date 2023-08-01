@@ -8,14 +8,10 @@ function Gameboard() {
 
   useEffect(() => {
     setGameboard(new gameboardObject(10, 10));
-    setTimeout(() => {
-      console.log(gameboard)
-    }, 1000);
   }, []);
 
   return (
-    <div className='gameboard'>
-      <h1>My Gameboard</h1>
+    <div className='gameboard' style={{ backgroundImage: "url(/assets/boards.png)" }}>
       {gameboard?.board && gameboard.board.map(row => (
         <ul>
           {row.map(space => (

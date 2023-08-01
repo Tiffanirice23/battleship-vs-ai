@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import Gameboard from './components/Gameboard/Gameboard';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: "url(/assets/water.gif" }}>
       <Gameboard />
     </div>
   );

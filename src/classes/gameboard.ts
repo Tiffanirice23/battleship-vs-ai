@@ -10,7 +10,7 @@ class Gameboard {
     this.board = this.setupBoard(length, height);
   }
 
-  setupBoard(length, height): board {
+  setupBoard(length: number, height: number): board {
     let board = [];
     for (let h = 0; h < height; h++) {
       let row = [];
